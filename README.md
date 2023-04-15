@@ -1,4 +1,4 @@
-# PikoKeyBeta
+# PikoKey ver1.1
 
 ## About this page
 - MIDIキーボード PikoKey Ver1.1版 組み立てキットの情報ページです。
