@@ -33,7 +33,7 @@
 
 ## 基板パターン図
 
-[PCB Pattern](/Hardware/pikokeyV1_1_pattern)
+[PCB Pattern](/Hardware/pikokeyV1_1_pattern.pdf)
 
 ## 部品配置図
 
