@@ -3,7 +3,6 @@
 ## About this page
 - MIDIキーボード PikoKey Ver1.1版 組み立てキットの情報ページです。
 - Pikoket 2 で頒布したβ版のバグフィックス版です。回路図に変更があります。
-- 随時更新中
 
 - Arduino Nano Everyは別売ですので、別途入手しておいてください。D20,D21を使用しているので、無印Nanoは使えません。
 
@@ -72,7 +71,9 @@
 
 ### サンプルコード
 - Arduino Nano Every用です。
-- いろいろバージョンアップしているので、マニュアル整備予定です。
+- ファンクションキーと鍵盤キーの同時押しで、MIDI CH変更や、Program Change等の送信が可能です。下図を参照ください。
  
 
 [PikoKey_V1_1.ino](/Software/PikoKey_V1_1.ino)
+
+![FunctionImage](/image/function.png)
