@@ -1,8 +1,8 @@
 //---------------------------
 //   Piko Key v1.1
 //   Sample Program
-//   ver 0.2
-//   2023/4/10
+//   ver 0.3
+//   2023/4/29
 //   by Synth Senpai
 //---------------------------
 
@@ -18,6 +18,7 @@ byte note_offset = 48 ;
 byte channel  = 1;
 byte funcno;
 int pgno ;
+int vol = 63 ;
 
 bool up_sw_state ;
 bool dn_sw_state ;
@@ -222,22 +223,22 @@ void loop() {
           }
           break;
         case 8:
-          pgno = pgno - 10;
-          if (pgno < 0)
+          vol = vol - 10;
+          if (vol < 0)
           {
-            pgno = 0;
+            vol = 0;
           }
-          MIDI.sendProgramChange (pgno , channel );
+          MIDI.sendControlChange ( 7  , vol , channel );
           break;
         case 9:
           break;
         case 10:
-          pgno = pgno + 10;
-          if (pgno > 127)
+          vol = vol + 10;
+          if (vol > 127)
           {
-            pgno = 127;
+           vol = 127;
           }
-          MIDI.sendProgramChange (pgno , channel );
+          MIDI.sendControlChange ( 7  , vol , channel );
           break;
         case 11:
           channel++;
