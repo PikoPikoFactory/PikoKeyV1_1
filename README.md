@@ -1,5 +1,7 @@
 # PikoKey ver1.1
 
+![outlineiimage](/image/pikokey.png)
+
 ## About this page
 - MIDIキーボード PikoKey Ver1.1版 組み立てキットの情報ページです。
 - Pikoket 2 で頒布したβ版のバグフィックス版です。回路図に変更があります。
