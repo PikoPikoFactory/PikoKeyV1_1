@@ -8,6 +8,10 @@
 
 - Arduino Nano Everyは別売ですので、別途入手しておいてください。D20,D21を使用しているので、無印Nanoは使えません。
 
+## 初心者向け作り方
+- 以下のスレに詳細解説しています。
+- https://twitter.com/PikopikoF/status/1657062698214096897
+
 ## Parts List
 
 | リファレンス番号 | 個数 | 部品名 |
