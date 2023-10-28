@@ -78,6 +78,7 @@
 ### サンプルコード
 - Arduino Nano Every用です。
 - ファンクションキーと鍵盤キーの同時押しで、MIDI CH変更や、Program Change等の送信が可能です。下図を参照ください。
+- 2023/10/28 Note NoのBug Fixしました
  
 
 [PikoKey_V1_1.ino](/Software/PikoKey_V1_1.ino)
