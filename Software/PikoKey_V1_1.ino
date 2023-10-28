@@ -1,8 +1,9 @@
 //---------------------------
 //   Piko Key v1.1
 //   Sample Program
-//   ver 0.3
-//   2023/4/29
+//   ver 0.4
+//   2023/10/14
+//  note no bug fix
 //   by Synth Senpai
 //---------------------------
 
@@ -14,7 +15,7 @@ USING_NAMESPACE_MIDI
 
 bool sw_state[15] ;
 bool note_state[15] ;
-byte note_offset = 48 ;
+byte note_offset = 47 ;
 byte channel  = 1;
 byte funcno;
 int pgno ;
@@ -53,7 +54,8 @@ byte sw_map[] = { SW01, SW02, SW03, SW04, SW05, SW06, SW07, SW08, SW09, SW10, SW
 const byte MAXKEY = 14;
 
 //midi
-MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI);
+MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI);  // for nano every
+//MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI);
 
 //*********************************************
 // setup
@@ -139,14 +141,14 @@ void loop() {
   {
     if (up_sw_state_old == true)
     {
-      if (note_offset == 36)
+      if (note_offset == 35)
       {
-        note_offset = 48 ;
+        note_offset = 47 ;
         digitalWrite(LED_DN, LOW);
         digitalWrite(LED_UP, LOW);
-      } else if (note_offset == 48)
+      } else if (note_offset == 47)
       {
-        note_offset = 60 ;
+        note_offset = 59 ;
         digitalWrite(LED_DN, LOW);
         digitalWrite(LED_UP, HIGH);
       }
@@ -157,14 +159,14 @@ void loop() {
   {
     if (dn_sw_state_old == true)
     {
-      if (note_offset == 60)
+      if (note_offset == 59)
       {
-        note_offset = 48 ;
+        note_offset = 47 ;
         digitalWrite(LED_DN, LOW);
         digitalWrite(LED_UP, LOW);
-      } else if (note_offset == 48)
+      } else if (note_offset == 47)
       {
-        note_offset = 36 ;
+        note_offset = 35 ;
         digitalWrite(LED_DN, HIGH);
         digitalWrite(LED_UP, LOW);
       }
